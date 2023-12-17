@@ -1030,9 +1030,9 @@ body {
   margin-bottom: 17.5px;
   margin-right: 0px;
 }
-.container-footer-logo {
+/* .container-footer-logo {
   margin-bottom: 72px;
-}
+} */
 .description-footer {
   color: #f4f4fd;
   max-width: 288px;
@@ -1060,9 +1060,9 @@ body {
 /* .container-footer-subscribe {
   margin-right: 24px;
 } */
-.container-footer-social {
+/* .container-footer-social {
   margin-bottom: 72px;
-}
+} */
 
 .form-subscribe-input {
   width: 264px;
@@ -1113,6 +1113,14 @@ body {
   color: #fff;
   margin-left: 16px;
 }
+@media screen and (max-width: 767px) {
+  .container-footer-social {
+    margin-bottom: 72px;
+  }
+  .container-footer-logo {
+    margin-bottom: 72px;
+  }
+}
 
 /* ============== /MOBILE FOOTER STYLES ============== */
 
@@ -1129,10 +1137,7 @@ body {
     align-items: baseline;
     flex-flow: row wrap;
   }
-  .container-footer-logo {
-    margin-left: 108px;
-    margin-right: 24px;
-  }
+
   .description-footer {
     max-width: 264px;
     display: flex;
@@ -1140,9 +1145,7 @@ body {
   .description-footer-social {
     max-width: 100%;
   }
-  .container-footer-subscribe {
-    margin-left: 108px;
-  }
+
   .form-subscribe {
     display: flex;
     gap: 24px;
@@ -1152,7 +1155,15 @@ body {
   }
 }
 /* ============== /TEAM FOOTER STYLES ============== */
+@media screen and (max-width: 1167px) {
+  .container-footer {
+    width: 552px;
+  }
 
+  .container-footer-logo {
+    margin-right: 24px;
+  }
+}
 /* ============== /DESKTOP  FOTTER STYLES ============== */
 @media screen and (min-width: 1168px) {
   .container {
@@ -1162,13 +1173,9 @@ body {
     flex-wrap: nowrap;
   }
   .container-footer-logo {
-    margin-left: 0;
     margin-right: 120px;
   }
   .container-footer-social {
     margin-right: 80px;
-  }
-  .container-footer-subscribe {
-    margin-left: 0;
   }
 }
